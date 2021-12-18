@@ -1,32 +1,40 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-string smallest(string s){
-    
-    int l = s.length();
-    string ans = "";
+void solve(){
+     
+   int n;
+   cin>>n;
+   vector<pair<int,int>> vec;
 
-    for (int i = 0; i < l-1; i++) {
+   for(int i=0;i<n;i++){
+    int Si,Di;cin>>Si>>Di;
+    vec.push_back({Si,Si+Di-1});
+   }
 
-        if (s[i] > s[i + 1]) {
-            for (int j = 0; j < l; j++) {
-                if (i != j)
-                    ans += s[j];
-            }
-            return ans;
-        }
+ sort(vec.begin(), vec.end(), [](auto &left, auto &right){
+    return left.second < right.second;
+ });
+
+vector<pair<int,int>> ans;
+ans.push_back(vec[0]);
+
+for(int i=1;i<n;i++){
+    if(vec[i].first>ans.back().second){
+        ans.push_back(vec[i]);
     }
-    ans = s.substr(0, l - 1);
-    return ans;
 }
+  cout << ans.size();
+
+}
+
+
 
 
 int main(){
 
-     string s;
-     cin>>s;
-    
-    cout << smallest(s);
 
+     solve();
+  
     return 0;
 }
