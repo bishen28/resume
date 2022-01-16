@@ -1,0 +1,194 @@
+\documentclass[13pt,a4paper,roman]{moderncv}      
+\moderncvstyle{banking}                           
+\moderncvcolor{black}                             
+\nopagenumbers{}                                  
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome}
+\usepackage{fontspec}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage[scale=0.91]{geometry}
+\usepackage{multicol}
+
+\usepackage{import}
+% personal datahttps://www.overleaf.com/project/60eb5099143ba4806c917576
+\name{AADARSH}{BISHEN}
+\address{}{}{}
+\newcommand*{\customcventry}[7][.3em]{
+  \begin{tabular}{@{}l} 
+    {\bfseries #4}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\bfseries #5}
+  \end{tabular} \\
+  \begin{tabular}{@{}l} 
+    {\itshape #3}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #2}
+  \end{tabular}
+  \ifx&#7&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#7%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\newcommand*{\customcvproject}[4][.25em]{
+%   \vfill\noindent
+  \begin{tabular}{@{}l} 
+    {\bfseries #2}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #3}
+  \end{tabular}
+  \ifx&#4&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#4%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\setlength{\tabcolsep}{12pt}
+
+\begin{document}
+\makecvtitle
+\vspace*{-23mm}
+
+\begin{center}
+\begin{tabular}{ c c c }
+  \faEnvelopeO\enspace bishen@iitk.ac.in & \faGithub\enspace https://github.com/bishen28 & \faMobile\enspace 8858428707\\  
+\end{tabular}
+\end{center}
+
+\section{EDUCATION}
+
+\begin{tabular}{|p{3cm}|p{7cm}|p{2.6cm}|p{3cm}|}
+ \hline 
+   \textbf{Degree} &  \textbf{Institute} & \textbf{Year} & \textbf{CPI or \%}\\
+ \hline B.T\textbf{(Civil Engg.)} & Indian Institute of Technology Kanpur & 2018-Present & 6.6 \\
+ \hline
+ Class XII &  GA Inter High School, Hajipur(BSEB) & 2017 & 65.8\% \\
+ \hline
+ Class X &   GA Inter High School, Hajipur(BSEB) & 2015 & 75.8\% \\
+ 
+ \hline
+\end{tabular}
+
+
+
+
+\section{SCHOLASTIC ACHIEVEMENT}
+
+
+  {\begin{itemize}
+    \item \large Secured  \textbf{All  India  Rank 3177} in \textbf{Joint Entrance Examination Advanced - 2018} among  250000  candidates.
+    \item \large Secured \textbf{All India Rank 4554} in \textbf{Joint Entrance Examination Mains - 2018} among 1.5 million candidates.
+  \end{itemize}
+  }
+
+
+\section  {PROJECTS}
+
+{\customcvproject {\large SORTING VISUALIZER (self project)}{Aug 2021 - Present}
+  {\begin{itemize}
+    \item  \large Created a web application using \textbf{HTML}, \textbf{CSS}, \textbf{JavaScript} to visualize how various sorting work. 
+    \item \large Learnt \textbf{Sorting Algorithm} like Bubble sort, Insertion Sort, Selection Sort, Quick Sort, Merge Sort.
+    \item \large Created \textbf{User Interface (UI)} using \textbf{HTML}, \textbf{CSS} and enhanced it further using \textbf{Bootstrap}.
+    \item \large Implemented the \textbf{animation}, \textbf{color effect} and core functionality using \textbf{JavaScript}
+  \end{itemize}
+  }
+}
+
+{\customcvproject{\large BUDGET MANAGER (self project)}{July 2021–Aug 2021}
+{\begin{itemize}
+  \item \large Build a {browser action chrome extension} using \textbf{chrome Application programming interface(API)} 
+  \item \large Used \textbf{Manifest Version-2}, and \textbf{Chrome APIs like chrome.storage, contextmenu, and notifications}.
+  \item \large This Extension \textbf{helps to keep track of Expenditure} while shopping on multiple e-commerce website.  
+  \item \large You can set the limit of your Expenditure and whenever you cross the limit it will notify.   
+\end{itemize}
+}
+} 
+ 
+
+{\customcvproject{\large SIMON GAME (self project)}{June 2021 – July 2021}
+{\begin{itemize}
+  \item \large Build \textbf{web version} of exact physical electronic The Simon Game for memory skill development.
+  \item \large  Learnt  advanced JavaScript HTML \textbf{document object modal(DOM)} and implemented in the project.
+  \item \large People can play this game online and can \textbf {save a lot of money}, instead of buying the physical toy.
+\end{itemize}
+}
+}
+
+
+{\customcvproject{\large LEADS TRACKER - A chrome Extension (self project)}{June 2021 – July 2021} 
+{\begin{itemize}
+  \item \large Build the extension and \textbf{deployed} it on \textbf{chrome web store}, peoples can store and delete URL in one click.  
+  \item \large This extension will \textbf{help the sales company}, they can store the profile-URL of their potential customers.
+\end{itemize}
+}
+}
+
+{\customcvproject{\large VERTICAL LIFT MACHINE}{Aug 2019 – Nov 2019} 
+{\large {under prof. Mohit Law Department of Mechanical Engineering, IIT Kanpur}}
+
+{\begin{itemize}
+  \item \large Made a  lefting machine (course project) under a project head and worked with 6 other people.
+  \item \large Made \textbf{3D-CAD} modal of  project and Learnt controlling a \textbf {DC motor} using a  \textbf{Arduino board}.
+\end{itemize}
+}
+}
+
+\section{TECHNICAL SKILL}
+\begin{minipage}{\maincolumnwidth}%
+	\small{
+    	\begin{itemize}
+          
+          \item \large \textbf{Programming Languages :} C, C++, HTML, CSS, JavaScript, Familier with python 
+         \item \large \textbf{Tool\textbackslash Framework\textbackslash library :} MATLAB, Autodesk Inventor, Ms-Office, LaTeX, Bootstrap, jQuery 
+		\end{itemize}}% 
+\end{minipage}%
+
+\section{RELEVANT COURSEWORK {(*online course )}}
+\begin{minipage}{\maincolumnwidth}
+\begin{multicols}{2}
+\begin{itemize}
+  \large {
+    \item Fundamental of Computing
+    \item Probability and Statistics
+    \item Computational Methods in Engineering
+    \item Data Structures and Algorithms* 
+    \item Object-Oriented Programming* 
+    }
+\end{itemize}
+ \end{multicols}
+\end{minipage}
+
+\section{MISCELLANEOUS}
+\begin{minipage}{\maincolumnwidth}
+	
+	\small{
+    	\begin{itemize}
+          \item  \large Achieved \textbf{1584 (2-star)} rating in \textbf{Competitive Programming} contest platform codechef.
+
+          
+          \item \large Worked as \textbf{Teaching Assistant} at Shiksha Sopan(classes for Sopan children by H.C Verma).
+          
+          \item  \large Participated in volleyball tournament in \textbf{Inferno'18}, an inter-hostel sports event and \textbf {won gold medal.} 
+          \item  \large Participated in volleyball tournament in \textbf{Udghosh'18}, an collage sportsfest  and \textbf {won Silver medal.} 
+          
+          
+          
+		\end{itemize}
+		}
+		
+\end{minipage}
+      
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                       
+\end{document}
