@@ -50,7 +50,7 @@ WHERE mov_rel_country != 'UK';
 
 -- // pending work
 -- *** also application of join operation
-WITH T1 AS (
+CREATE VIEW T1  AS (
 SELECT mov_title , mov_year, mov_dt_rel FROM movie
 WHERE mov_id IN (
 SELECT mov_id FROM rating 
@@ -58,10 +58,9 @@ WHERE rev_id IN (
     SELECT rev_id FROM reviewer
      WHERE rev_name IS NULL
  ))
-),
+);
 
-
-WITH T2 AS (
+CREATE VIEW  T2 AS (
 SELECT act_fname, act_lname FROM actor
 WHERE act_id IN (
         SELECT act_id FROM movie_cast
@@ -70,9 +69,9 @@ WHERE act_id IN (
             WHERE rev_id IN (
                 SELECT rev_id FROM reviewer 
                 WHERE rev_name IS NULL)))
-),
+);
 
-WITH T3 AS (
+CREATE VIEW T3 AS (
 SELECT dir_fname , dir_lname FROM director 
 WHERE dir_id IN (
       SELECT dir_id FROM movie_direction 
@@ -81,7 +80,10 @@ WHERE dir_id IN (
            WHERE rev_id IN (
             SELECT rev_id FROM reviewer
             WHERE rev_name IS NULL)))
-),
+);
+
+
+SELECT * FROM T1,T2,T3;
 
 
 -- ********************************* Qurey-5***************************************
