@@ -1,3 +1,6 @@
+// https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Introduction/basic-django.png
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
